@@ -28,7 +28,7 @@
 	<div class="warning-popup">
 	  <p>Right-click has been disabled.</p>
 	</div>
-	<style>
+<style>
 	.warning-popup {
 		display: none;
 		position: fixed;
@@ -49,11 +49,10 @@
 		from {opacity: 0;}
 		to {opacity: 1;}
 	  }
-	  </style>
-	  <script> 
+</style>
+<script> 
 	  const warningPopup = document.querySelector('.warning-popup');
-
-		window.addEventListener('contextmenu', function (event) {
+       window.addEventListener('contextmenu', function (event) {
 		  event.preventDefault();
 		  warningPopup.classList.add('show');
 		  
@@ -61,7 +60,7 @@
 			warningPopup.classList.remove('show');
 		  }, 3000);
 		});
-		</script>
+</script>
 	<header>
 		<nav>
 		  <div class="logo">
